@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BSE (Bombay Stock Exchage) | Live Stock Market .
+        </title>
+            <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">      
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <style>
+
+            a:link{
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited{
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover{
+                color: white;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            a:active{
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            div{
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgba(0, 174, 255, 0.901);
+            font-size: 15px;
+            text-align:end;
+            border: 1px outset black;
+            }
+
+            .bse{
+                text-align: center;
+                background-color: white;
+                color: rgba(0, 174, 255, 0.901);
+                /*background-image: url("C:/Users/Ismail_Emad/Desktop/bse_img.jpg");*/
+            } 
+		
+            #navlist{
+                background-color: #0074D9;
+                position: absolute;
+                width: 98.82%;
+            }
+            
+            #navlist a{
+                float:left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        
+            .navlist-right{
+                float:right;
+            }
+    
+            #navlist a:hover{
+                background-color: white;
+                color: black;
+            }
+            
+            .search input[type=text]{
+                width:300px;
+                height:25px;
+                border-radius:1px;
+                border: none;
+            }
+            
+            .search{
+                float:right;
+                margin:7px;
+            }
+            
+            .search button{
+                background-color:#0074D9;
+                color: white;
+                float: right;
+                padding: 5px 10px;
+                font-size: 12px;
+                border: none;
+                cursor: pointer;
+            }  
+
+            .header{
+                display: block;
+            }
+
+            .footer{
+                text-align: center;
+                padding: 3px;
+                background-color: darksalmon;
+                color: white;
+            }
+            
+            .mySlides{
+                display:none;
+            }
+
+            aside{
+                width: 40%;
+                padding-left: .5rem;
+                margin-left: .5rem;
+                float: right;
+                box-shadow: inset 5px 0 5px -5px #29627e;
+                font-style: italic;
+                color: #29627e;
+            }
+
+            aside > p{
+                margin: .5rem;
+            }
+
+            p{
+                font-family: 'Fira Sans', sans-serif;
+            }
+
+            .trans{
+                width: 50px;
+                height: 50px;
+                background: rgba(255, 0, 0, 0.904);
+                transition: width 2s;
+            }
+
+            div:hover{
+                width: 300px;
+            }
+
+            .transform{
+                font-size: 25px;
+                margin: 20px 0;
+                margin-left: 100px;
+            }
+     
+            img{
+                border: 1px solid black;
+                transition-duration: 2s;
+                -webkit-transition-duration: 2s;
+            }
+     
+            /*img:hover{
+                transform: translate(100px, 100px);
+         
+        -ms-transform: translate(100px, 100px);
+         
+        -webkit-transform: translate(100px, 100px);
+            }*/
+
+        </style>
+    </head>
+
+    <body style="background-color:grey">
+
+        <article>
+            <header>
+              <center><h1 style="color:orange">Stock Market Analysis</h1></center>
+          </article>
+
+        <div>
+            <a href="#top/" title="Skip to main content">Skip to main content</a>
+        <ul style="list-style: none; display: inline;">
+            <li style="display:inline; padding-right:30px;">
+               |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:highContrast()" title="High Contrast">High Contrast</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:normalContrast()" title="Reset">&nbsp;&nbsp;&nbsp;Reset</a>
+            </li>
+            <li style="display:inline; padding-left:5px;"><a href="#Skip" title="Decrease font size" onclick="set_font_size(&#39;decrease&#39;)">-A&nbsp;&nbsp;</a></li>
+            <li style="display: inline; padding-left: 5px;"><a href="#Skip" title="Reset font size" onclick="set_font_size(&#39;amit&#39;)">A&nbsp;&nbsp;</a></li>
+            <li style="display: inline; padding-left: 5px;"><a href="#Skip" title="Increase font size" onclick="set_font_size(&#39;increase&#39;)">+A&nbsp;&nbsp;</a></li>
+        </ul>
+        </div>   
+
+        <div title="Bombay Stock Exchange" class="bse">
+            <li style="display:inline; padding-left:5px; font-size:50px;">BSE</li>
+            <li style="display: block; padding-left:5px; font-size:15px; color: orange;">EXPERIENCE THE NEW</li>
+
+        </div>
+
+        <div id="navlist">
+            <a href="#">Home</a>
+            <a href="#">Live Stock</a>
+            <a href="#">Markets</a>
+            <a href="#">Investors</a>
+            <a href="#">About BSE</a>
+            <a href="#">Contact Us</a>
+             
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder=" Search" name="search">
+                    <button>
+                        <i class="fa fa-search" style="font-size: 18px;" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+         
+        
+        <br><br><br><br>
+        <!--<div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="C:/Users/Ismail_Emad/Desktop/graph1.jpg" style="width:100%">
+        <img class="mySlides" src="C:/Users/Ismail_Emad/Desktop/graph2.jpg" style="width:10px" height="10px">
+        <img class="mySlides" src="C:/Users/Ismail_Emad/Desktop/graph3.jpg" style="width:100%">
+
+        <img src="C:/Users/Ismail_Emad/Desktop/graph3.jpg" alt="BSE" style="width:30%" height="30%">
+
+        <h2 class="w3-center">Trading View Indicator</h2>
+        <div class="trans"></div>-->
+        <!--<script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>-->
+
+<!--<p>Bombay Stock Exchange was started by Premchand Roychand in 1875.While BSE Limited is now synonymous with Dalal Street, it was not always so. In the 1850s, five stock brokers gathered together under a Banyan tree in front of Mumbai Town Hall, where Horniman Circle is now situated..</p>-->
+
+<aside>
+    <p>BSE established India INX on 30 December 2016. India INX is the first international exchange of India.</p>
+       
+</aside>
+
+<p>BSE is Asia's first and the Fastest Stock Exchange in world with the speed of 6 micro seconds and one of India's leading exchange groups. In 2013, BSE upgraded its technology platform to Bolt Plus, which is based on the business architecture.</p>
+
+
+<footer>
+    <p><a href="mailto:ismailemad005@gmail.com">ismailemad005@gmail.com</a></p>
+  </footer>
+
+    </body>
+</html>
